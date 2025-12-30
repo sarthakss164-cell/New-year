@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background-image: url(image/bg_image.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .background {
+            /* border: 2px solid white; */
+            height: 900px;
+            width: 3000px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 100px;
+            left: -350px;
+        }
+
+        .write {
+            /* border: 2px solid rgb(255, 255, 255); */
+            height: 10vh;
+            width: 40vw;
+            font-size: 100px;
+        }
+        
+
+        .image {
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+            /* border: 2px solid rgb(255, 255, 255); */
+            height: 90px;
+            width: 70vw;
+            position: relative;
+            left: 750px;
+
+        }
+
+        .image-space {
+            display: flex;
+            flex-direction: row;
+            gap: 3px;
+            /* border: 2px solid rgb(255, 255, 255); */
+            height: 90px;
+            width: 70vw;
+            position: relative;
+            top: 1100px;
+            left: -1400px;
+        }
+
+        img {
+            height: 60px;
+            width: 60px;
+        }
+
+        .img1 {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: image-forward 5s ease-in-out 1s 1 forwards,
+                image-backward 5s ease-in-out 9s 1 forwards;
+        }
+        .img2 {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: image-forward 5s ease-in-out 15s 1 forwards,
+                image-backward 5s ease-in-out 24s 1 forwards;
+        }
+        .img3 {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: image-forward 5s ease-in-out 30s 1 forwards,
+                image-backward 5s ease-in-out 39s 1 forwards;
+        }
+        .img4 {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: image-forward 5s ease-in-out 45s 1 forwards,
+                image-backward 5s ease-in-out 54s 1 forwards;
+        }
+        .img5 {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: image-forward 5s ease-in-out 60s 1 forwards,
+                image-backward 5s ease-in-out 69s 1 forwards;
+        }
+        .img6 {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: image-forward 5s ease-in-out 75s 1 forwards,
+                image-backward 5s ease-in-out 84s 1 forwards;
+        }
+        .img7 {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: image-forward 5s ease-in-out 90s 1 forwards,
+                image-backward 5s ease-in-out 99s 1 forwards;
+        }
+        .img8 {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: image-forward 5s ease-in-out 105s 1 forwards,
+                image-backward 5s ease-in-out 114s 1 forwards;
+        }
+        .img9 {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: image-forward 5s ease-in-out 120s 1 forwards,
+                image-backward 5s ease-in-out 129s 1 forwards;
+        }
+        .img10 {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: image-forward 5s ease-in-out 135s 1 forwards,
+                image-backward 5s ease-in-out 144s 1 forwards;
+        }
+        .img11 {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: image-forward 5s ease-in-out 150s 1 forwards,
+                image-backward 5s ease-in-out 159s 1 forwards;
+        }
+        @keyframes image-forward {
+            from {}
+
+            to {
+                transform: translateX(500px) translateY(580px) scale(12);
+            }
+        }
+
+        @keyframes image-backward {
+            from {}
+
+            to {
+                transform: translateY(1110px);
+            }
+        }
+        .new ,.old{
+            position: relative;
+            left: 500px;
+            color: white;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="image">
+        <div class="new">
+            <h1>Welcome 2026</h1>
+        </div>
+        <img class="img1" src="image/Image1.jpg" alt="">
+        <img class="img2" src="image/Image2.jpg" alt="">
+        <img src="image/Image3.jpg" alt="" class="img3">
+        <img src="image/Image4.jpg" alt="" class="img4">
+        <img src="image/Image5.jpg" alt="" class="img5">
+        <img src="image/Image6.jpg" alt="" class="img6">
+        <img src="image/Image7.jpg" alt="" class="img7">
+        <img src="image/Image8.jpg" alt="" class="img8">
+        <img src="image/Image9.jpg" alt="" class="img9">
+        <img src="image/Image10.jpg" alt="" class="img10">
+        <img src="image/Image11.jpg" alt="" class="img11">
+    </div>
+    <div class="background">
+        <div class="write">
+            Memories of 2025
+        </div>
+    </div>
+    <div class="image-space">
+        <div class="old">
+            <H1>Bye Bye 2025</H1>
+        </div>
+    </div>
+</body>
+
+</html>
